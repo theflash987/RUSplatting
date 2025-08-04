@@ -55,9 +55,9 @@ Please refer to the documentation `README.md` from the [3D Gaussian Splatting re
 - **Type**: Boolean flag
 - **Default**: False
 - **Note**: 
-  - Original frames: Fixed weight of 1.0
-  - Interpolated frames: Learnable weights updated during training
-  - Overrides `--frame` setting when both are specified
+  - Original frames: Fixed weight of 1.0.
+  - Interpolated frames: Learnable weights updated during training.
+  - Overrides `--frame` setting when both are specified.
 
 ### `--alpha <value>`  
 - **Purpose**: Coefficient for the log uncertainty term in adaptive loss (experimental feature).
