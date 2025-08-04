@@ -85,7 +85,7 @@ python train.py -s path/to/scene --frame 0.4 --alpha 0.1
 python train.py -s path/to/scene --adaptive
 ```
 
-## Recommend Work
+## 5. Recommend Work
 
 We thank the authors of the following works for their excellent contributions:
 
