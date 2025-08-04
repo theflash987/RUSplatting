@@ -1,0 +1,34 @@
+name: RUSplatting
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.12.9
+  - pip
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  - pytorch-cuda=12.1
+  - cudatoolkit=12.1
+  - numpy=2.2.2
+  - scipy
+  - pillow=11.1.0
+  - matplotlib
+  - opencv
+  - imageio
+  - ffmpeg=4.3
+  - tqdm
+  - pyyaml=6.0.2
+  - requests
+  - setuptools
+  - wheel
+  - certifi
+  - mkl
+  - blas=1.0=mkl
+  - pip:
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn
+    - opencv-python
+    - joblib
