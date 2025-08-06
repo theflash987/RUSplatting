@@ -147,12 +147,12 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
         else:
             loss = torch.mean((1.0 - opt.lambda_dssim) * Ll1) + opt.lambda_dssim * (1.0 - ssim(mask * image, mask * gt_image)) + l_d + l_g + 0.1 * Ll1_depth + lambda_smooth * smooth_loss
             
-            if hasattr(opt, 'adaptive') and opt.adaptive:
+            if weight != 1 and hasattr(opt, 'adaptive') and opt.adaptive:
                 # loss = (weight * loss) / 2 + (opt.alpha * log_uncertainty) / 2
                 loss = (weight * loss) / 2 + log_uncertainty / 2
 
             # Apply frame weights if --frame flag is used
-            if hasattr(opt, 'frame') and opt.frame is not None:
+            if weight != 1 and hasattr(opt, 'frame') and opt.frame is not None:
                 loss = weight * loss
 
         loss.backward()
