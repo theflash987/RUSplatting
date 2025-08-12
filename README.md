@@ -40,7 +40,7 @@ Please refer to the documentation `README.md` from the [3D Gaussian Splatting re
     |---stereo
     ```
   
-  **Note on Frame Interpolation**: This work does not focus on the implementation of frame interpolation techniques. Any method capable of generating intermediate frames from consecutive frames can be used. In our implementation, we use [RIFE](https://github.com/hzwer/ECCV2022-RIFE) for frame interpolation. Since our training data has a resolution of 720p, we further employ [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) for resolution enhancement to ensure consistency with the training data resolution. Similarly, as this work focuses on 3D Gaussian Splatting reconstruction, there are no restrictions on these techniques, any method that achieves the desired functionality can be selected. 
+  **Note on Frame Interpolation**: This work does not focus on the implementation of frame interpolation techniques. Any method capable of generating intermediate frames from consecutive frames can be used. In our implementation, we use [RIFE](https://github.com/hzwer/ECCV2022-RIFE) for frame interpolation. Since our training data has a resolution of 720p, we further employ [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) for resolution enhancement to ensure consistency with the training data resolution. Similarly, as this work focuses on 3D Gaussian Splatting reconstruction, there are no restrictions on these techniques, any method that achieves the desired functionality can be selected. However, the quality of the interpolated frames and the subsequent resolution enhancement **does** have an impact on the final reconstruction quality.
 
 ## 4. Training Flags
 
