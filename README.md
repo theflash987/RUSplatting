@@ -105,10 +105,10 @@ We thank the authors of the following works for their excellent contributions:
 If you think this project is helpful, please feel free to leave a star or cite our paper:
 
 ```bibtex
-@article{jiang2025rusplatting,
-  title={RUSplatting: Robust 3D Gaussian Splatting for Sparse-View Underwater Scene Reconstruction},
-  author={Jiang, Zhuodong and Wang, Haoran and Huang, Guoxi and Seymour, Brett and Anantrasirichai, Nantheera},
-  journal={arXiv preprint arXiv:2505.15737},
-  year={2025}
+@inproceedings{jiang2025rusplatting,
+  author    = {Zhuodong Jiang and Haoran Wang and Guoxi Huang and Brett Seymour and Nantheera Anantrasirichai},
+  title     = {RUSplatting: Robust 3D Gaussian Splatting for Sparse-View Underwater Scene Reconstruction},
+  booktitle = {Proceedings of the British Machine Vision Conference (BMVC)},
+  year      = {2025}
 }
 ```
