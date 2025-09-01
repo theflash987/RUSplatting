@@ -1,6 +1,7 @@
 # RUSplatting: Robust 3D Gaussian Splatting for Sparse-View Underwater Scene Reconstruction
 
 📄 [**Paper**](https://arxiv.org/abs/2505.15737) accepted by BMVC 2025
+🌐 [**Project Page**](https://theflash987.github.io/RUSplatting.page/)
 
 ![RUSplatting Overview](image/overview_final_v2.png)
 
