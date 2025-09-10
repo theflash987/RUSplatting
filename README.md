@@ -3,6 +3,9 @@
 📄 [**Paper**](https://arxiv.org/abs/2505.15737) accepted by BMVC 2025
 🌐 [**Project Page**](https://theflash987.github.io/RUSplatting.page/)
 
+[![HF Dataset](https://img.shields.io/badge/HuggingFace-Dataset-ffd21e?logo=huggingface)](https://huggingface.co/datasets/theflash987/Submerged3D)
+[![Zenodo Dataset](https://img.shields.io/badge/Zenodo-Dataset-1682D4?logo=zenodo&logoColor=white)](https://zenodo.org/records/15482420)
+
 ![RUSplatting Overview](image/overview_final_v2.png)
 
 
@@ -21,7 +24,15 @@ Please refer to the documentation `README.md` from the [3D Gaussian Splatting re
 
 ## 3. Dataset
 
-- [**Submerged3D**](https://zenodo.org/records/15482420): Our newly collected dataset, it consists of four scenes, each containing 20 RGB 720p images focusing on shipwrecks captured in the deep sea.
+- **Submerged3D**: Our newly collected dataset, it consists of four scenes, each containing 20 RGB 720p images focusing on shipwrecks captured in the deep sea.
+  - Using our dataset via Hugging Face:
+    ```python
+    from datasets import load_dataset
+    
+    # Login using e.g. `huggingface-cli login` to access this dataset
+    ds = load_dataset("theflash987/Submerged3D")
+    ```
+  - Or download the zip file directly from [Zenodo](https://zenodo.org/records/15482420).
 - **Processing your own scene**:
   - Please refer to the [Processing your own scenes](https://github.com/graphdeco-inria/gaussian-splatting?tab=readme-ov-file#processing-your-own-scenes) section from 3D Guassian Splatting.
   - In order to train with the interpolated frames, the interpolated frames **must be** named with a `_to_` flag. For example: `frame001_to_frame002.jpg`.
