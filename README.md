@@ -36,7 +36,15 @@ Please refer to the documentation `README.md` from the [3D Gaussian Splatting re
 - **Processing your own scene**:
   - Please refer to the [Processing your own scenes](https://github.com/graphdeco-inria/gaussian-splatting?tab=readme-ov-file#processing-your-own-scenes) section from 3D Guassian Splatting.
   - In order to train with the interpolated frames, the interpolated frames **must be** named with a `_to_` flag. For example: `frame001_to_frame002.jpg`.
-  - The depth map are generated from [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2).
+  - The depth maps are generated from [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2).
+    - **Note on Generating Depth Maps**: Since the depth info output by the Depth-Anything-V2 is opposite to what our model expects, add the following line before *line 63* in [run.py](https://github.com/DepthAnything/Depth-Anything-V2/blob/main/run.py) to flip the depth values:
+      ```
+      depth = 255.0 - depth
+      ```
+      and add the following flags:
+      ```
+      --pred-only --grayscale
+      ```
   - The final structure of your own scene should be like this
     ```
     <your_dataset>
