@@ -121,7 +121,7 @@ We thank the authors of the following works for their excellent contributions:
 
 - [Depth Anything V2](https://arxiv.org/abs/2406.09414)
 
-## 6.License
+## 6. License
 
 This project is based on the original Gaussian-Splatting implementation. It remains under the Gaussian-Splatting License (research use only). See the [LICENSE](LICENSE.md) file for details.
 
