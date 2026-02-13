@@ -5,6 +5,7 @@
 
 [![HF Dataset](https://img.shields.io/badge/HuggingFace-Dataset-ffd21e?logo=huggingface)](https://huggingface.co/datasets/theflash987/Submerged3D)
 [![Zenodo Dataset](https://img.shields.io/badge/Zenodo-Dataset-1682D4?logo=zenodo&logoColor=white)](https://zenodo.org/records/15482420)
+[![License](https://img.shields.io/badge/License-Research%20Only-orange)](LICENSE.md)
 
 ![RUSplatting Overview](image/overview_final_v2.png)
 
@@ -120,7 +121,11 @@ We thank the authors of the following works for their excellent contributions:
 
 - [Depth Anything V2](https://arxiv.org/abs/2406.09414)
 
-## 6. Citation
+## 6.License
+
+This project is based on the original Gaussian-Splatting implementation. It remains under the Gaussian-Splatting License (research use only). See the [LICENSE](LICENSE.md) file for details.
+
+## 7. Citation
 
 If you think this project is helpful, please feel free to leave a star or cite our paper:
 
